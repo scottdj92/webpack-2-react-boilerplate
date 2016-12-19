@@ -4,7 +4,10 @@
   "description": "a boilerplate with webpack 2 and react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack -d --progress",
+    "bundle": "webpack -p --config bundle"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,20 @@
   },
   "homepage": "https://github.com/scottdj92/webpack-2-react-boilerplate#readme",
   "devDependencies": {
-    "webpack": "beta"
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "image-webpack-loader": "^3.1.0",
+    "node-sass": "^4.1.0",
+    "react-hot-loader": "^1.3.1",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "beta",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^1.1.2"
   }
 }
