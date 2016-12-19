@@ -17,7 +17,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack Boilerplate'
+            template: 'app/index.html'
         })
     ],
     resolve: {
